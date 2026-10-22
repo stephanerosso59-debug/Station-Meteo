@@ -179,7 +179,7 @@ def validate_config(hass, data):
             raise ValueError("Invalid entity")
         if not eid:
             continue
-        domains = ("weather",) if role in ("weather", "weather_fallback") else ("sensor", "input_text") if role == "bulletin" else ("binary_sensor", "sensor") if role == "rain_status" else ("sensor",)
+        domains = ("weather",) if role in ("weather", "weather_fallback") else ("sensor", "input_text") if role in ("bulletin", "solar_note") else ("binary_sensor", "sensor") if role == "rain_status" else ("sensor",)
         if eid.split(".")[0] not in domains:
             raise ValueError(f"Invalid domain for {role}")
         if not registry.async_get(eid) and not hass.states.get(eid):

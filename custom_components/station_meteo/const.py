@@ -3,7 +3,7 @@ DOMAIN = "station_meteo"
 VERSION = "1.3.0"
 WEATHER_CONDITIONS = ("sunny", "clear-night", "partlycloudy", "cloudy", "rainy", "pouring", "snowy", "snowy-rainy", "lightning", "lightning-rainy", "fog", "windy", "windy-variant", "hail", "exceptional")
 PANEL_PATH = "station-meteo"
-ROLES = ("temperature", "humidity", "pressure", "illuminance", "irradiance", "uv", "wind_speed", "wind_gust", "wind_direction", "rain_total", "rain_rate", "rain_status", "dew_point", "battery", "signal", "weather", "weather_fallback", "bulletin", "weather_alert")
+ROLES = ("temperature", "humidity", "pressure", "illuminance", "irradiance", "uv", "wind_speed", "wind_gust", "wind_direction", "rain_total", "rain_rate", "rain_status", "dew_point", "battery", "signal", "weather", "weather_fallback", "bulletin", "weather_alert", "solar_today", "solar_tomorrow", "solar_d2", "solar_d3", "solar_d4", "solar_d5", "solar_d6", "solar_note")
 DEFAULT_NOTIFICATIONS = {
     "enabled": False, "recipients": [], "pressure": True, "pressure_drop": 3,
     "rain": True, "gust": False, "gust_threshold": 60, "storm": True, "cooldown": 60,
